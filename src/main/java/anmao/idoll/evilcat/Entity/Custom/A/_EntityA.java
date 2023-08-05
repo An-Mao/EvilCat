@@ -127,7 +127,6 @@ public class _EntityA extends Monster implements GeoEntity {
 
         @Override
         public void start() {
-            System.out.println("-----------------start------------------");
             LivingEntity livingentity = _EntityA.this.getTarget();
             if (livingentity != null) {
                 Vec3 vec3 = livingentity.getEyePosition();
@@ -136,7 +135,6 @@ public class _EntityA extends Monster implements GeoEntity {
 
             //EntityD.this.setIsCharging(true);
             _EntityA.this.playSound(SoundEvents.VEX_CHARGE, 1.0F, 1.0F);
-            System.out.println("-----------------end------------------");
         }
 
         @Override
